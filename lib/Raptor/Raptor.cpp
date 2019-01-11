@@ -18,6 +18,8 @@ When      Who  Description
 01/13/17  AL   Removed SetServoDeg, other servo functionalities (unused)
 01/09/19  KLG  Changed all datatypes to C99 inttypes.h-compatible datatypes;
                verified compatibility with PlatformIO
+01/11/19  GG   Fixed uint8_t to int8_t to solve not being able to reverse motor
+               directions
 ******************************************************************************/
 /*----------------------------- Include Files -------------------------------*/
 #include "Raptor.h"
@@ -82,7 +84,7 @@ Returns:      OK_OPERATION == new speed was successfully sent
               ERR_BADINPUT == an invalid speed was given
 Notes:
 ******************************************************************************/
-RaptorReturn_t RaptorClass::LeftMtrSpeed(uint8_t newSpeed) {
+RaptorReturn_t RaptorClass::LeftMtrSpeed(int8_t newSpeed) {
   if (abs(newSpeed) > 100) return ERR_BADINPUT;
 
   int16_t direction = newSpeed > 0 ? DIR_CCW : DIR_CW;
@@ -100,7 +102,7 @@ Returns:      OK_OPERATION == new speed was successfully sent
               ERR_BADINPUT == an invalid speed was given
 Notes:
 ******************************************************************************/
-RaptorReturn_t RaptorClass::RightMtrSpeed(uint8_t newSpeed) {
+RaptorReturn_t RaptorClass::RightMtrSpeed(int8_t newSpeed) {
   if (abs(newSpeed) > 100) return ERR_BADINPUT;
 
   int16_t direction = newSpeed > 0 ? DIR_CW : DIR_CCW;
