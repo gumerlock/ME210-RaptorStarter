@@ -94,8 +94,8 @@ class RaptorClass {
   public:
     RaptorClass();
 
-    RaptorReturn_t LeftMtrSpeed(uint8_t newSpeed);
-    RaptorReturn_t RightMtrSpeed(uint8_t newSpeed);
+    RaptorReturn_t LeftMtrSpeed(int8_t newSpeed);
+    RaptorReturn_t RightMtrSpeed(int8_t newSpeed);
 
     // // Servo Functions
     // RaptorReturn_t SetServoDeg(char deg);
