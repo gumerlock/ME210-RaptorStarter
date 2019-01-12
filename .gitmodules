@@ -4,6 +4,3 @@
 [submodule "lib/Chrono/lib/Chrono"]
 	path = lib/Chrono/lib/Chrono
 	url = git@10.67.59.70:karl/Chrono.git
-[submodule "lib/lib/Raptor"]
-	path = lib/lib/Raptor
-	url = git@10.67.59.70:karl/Raptor.git
