@@ -7,3 +7,7 @@
 [submodule "lib/Raptor"]
 	path = lib/Raptor
 	url = git@10.67.59.70:karl/Raptor.git
+[submodule "lib/Chrono"]
+	path = lib/Chrono
+	url = git@10.67.59.70:karl/Chrono.git
+	branch = master
