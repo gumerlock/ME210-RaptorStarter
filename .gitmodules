@@ -4,6 +4,3 @@
 [submodule "lib/Metro-Arduino-Wiring"]
 	path = lib/Metro-Arduino-Wiring
 	url = git@10.67.59.70:karl/Metro-Arduino-Wiring.git
-[submodule "lib/Chrono"]
-	path = lib/Chrono
-	url = git@10.67.59.70:karl/Chrono.git
