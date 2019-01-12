@@ -1,7 +1,7 @@
 #include <Raptor.h>
 #include <SPI.h>
 
-#include <Metro.h>
+#include <Chrono.h>
 
 
 /*---------------Module Defines-----------------------------*/
@@ -38,7 +38,7 @@ typedef enum {
 
 /*---------------Module Variables---------------------------*/
 States_t state;
-static Metro metTimer0 = Metro(LED_TIME_INTERVAL);
+static Chrono chrTimer0;  // Chrono defaults to MILLIS
 uint8_t isLEDOn;
 
 /*---------------Raptor Main Functions----------------*/
@@ -91,11 +91,13 @@ void handleMoveBackward(void) {
 }
 
 uint8_t TestLedTimerExpired(void) {
-  return (uint8_t) metTimer0.check();
+  // Using .hasPassed with interval and restart flag means we don't
+  // need to reset it in the response routine, which makes the _actual_
+  // intervals much closer to LED_TIME_INTERVAL
+  return (uint8_t) chrTimer0.hasPassed(LED_TIME_INTERVAL, true);
 }
 
 void RespLedTimerExpired(void) {
-  metTimer0.reset();
   if (isLEDOn) {
     isLEDOn = false;
     raptor.RGB(RGB_OFF);

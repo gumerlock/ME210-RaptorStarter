@@ -1,6 +1,12 @@
-[submodule "lib/Raptor"]
-	path = lib/Raptor
-	url = git@10.67.59.70:karl/Raptor.git
 [submodule "lib/Metro-Arduino-Wiring"]
 	path = lib/Metro-Arduino-Wiring
 	url = git@10.67.59.70:karl/Metro-Arduino-Wiring.git
+	branch = master
+[submodule "lib/Raptor"]
+	path = lib/Raptor
+	url = git@10.67.59.70:karl/Raptor.git
+	branch = master
+[submodule "lib/Chrono"]
+	path = lib/Chrono
+	url = git@10.67.59.70:karl/Chrono.git
+	branch = master
