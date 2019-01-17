@@ -1,12 +1,12 @@
 [submodule "lib/Metro-Arduino-Wiring"]
 	path = lib/Metro-Arduino-Wiring
-	url = git@10.67.59.70:karl/Metro-Arduino-Wiring.git
+	url = git@github.com:thomasfredericks/Metro-Arduino-Wiring.git
 	branch = master
 [submodule "lib/Raptor"]
 	path = lib/Raptor
-	url = git@10.67.59.70:karl/Raptor.git
+	url = git@github.com:gumerlock/ME210-Raptor.git
 	branch = master
 [submodule "lib/Chrono"]
 	path = lib/Chrono
-	url = git@10.67.59.70:karl/Chrono.git
+	url = git@github.com:gumerlock/Chrono.git
 	branch = master
