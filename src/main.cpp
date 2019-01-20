@@ -20,16 +20,16 @@
 void checkGlobalEvents(void);
 void handleMoveForward(void);
 void handleMoveBackward(void);
-unsigned char TestForKey(void);
+uint8_t TestForKey(void);
 void RespToKey(void);
-unsigned char TestForLightOn(void);
+uint8_t TestForLightOn(void);
 void RespToLightOn(void);
-unsigned char TestForLightOff(void);
+uint8_t TestForLightOff(void);
 void RespToLightOff(void);
-unsigned char TestForFence(void);
+uint8_t TestForFence(void);
 void RespToFence(void);
-unsigned char TestTimer0Expired(void);
-void RespTimer0Expired(void);
+uint8_t TestLedTimerExpired(void);
+void RespLedTimerExpired(void);
 
 /*---------------State Definitions--------------------------*/
 typedef enum {
