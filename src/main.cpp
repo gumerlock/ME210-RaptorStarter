@@ -28,8 +28,13 @@ uint8_t TestForLightOff(void);
 void RespToLightOff(void);
 uint8_t TestForFence(void);
 void RespToFence(void);
+<<<<<<< HEAD
 uint8_t TestLedTimerExpired(void);
 void RespLedTimerExpired(void);
+=======
+uint8_t TestTimer0Expired(void);
+void RespTimer0Expired(void);
+>>>>>>> gitea/master
 
 /*---------------State Definitions--------------------------*/
 typedef enum {
